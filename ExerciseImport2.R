@@ -1,4 +1,10 @@
 
+
+con <- url("http://im.cgu.edu.tw/bin/home.php")
+htmlCode <-readLines(con)
+close(con)
+htmlCode[3:5]
+
 #Twitter practice
 
 install.packages("rtweet")
@@ -45,7 +51,7 @@ View(comm)
 comm$likeCount<-as.numeric(comm$likeCount)
 
 #get channel info.
-
+str(Sunday)
 Sunday <- list_channel_resources(filter = c(channel_id = "UCi03YKYu4YWv-cFu0D6CFug"))
 playlist_id<-Sunday$items[[1]]$contentDetails$relatedPlaylists$uploads
 vids <- get_playlist_items(filter= c(playlist_id=playlist_id)) 
@@ -89,9 +95,9 @@ ListUni<-list("Title"=c(UniTitle),
 View(data.frame(ListUni))
 
 #取代
-gsub(" ","",)
+#gsub(" ","",)
 
-
+paste("Hello","World",sep="")
 
 
 

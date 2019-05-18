@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553403994940.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1147524085",
+    "id" : "6E074510",
+    "lastKnownWriteTime" : 1553448537,
+    "last_content_update" : 1553448537225,
+    "path" : "C:/workspace/TestProject/ExerciseImport.R",
+    "project_path" : "ExerciseImport.R",
+    "properties" : {
+        "cursorPosition" : "49,0",
+        "scrollLine" : "38",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -96,7 +96,7 @@ b[c(5,6,7)]
 b[seq(5,7,1)]
 b[5:7]
 a<-c(1:6)
-b<-c(3:6)
+b<-c(3:5)
 a+b
 
 #列表
@@ -104,6 +104,8 @@ listSample<-list(StdName=c("tommy","jimmy","mike"),
                  Year=2019,
                  Score=c(75,80,90,85),
                  School="CGU")
+str(listSample)
+
 listSample$Score
 listSample[[3]]
 listSample[3]
@@ -114,8 +116,8 @@ listSample$semester<-"上學期"
 #資料框
 iris
 str(iris)
+colnames(iris)
 iris$Time<-2
-iris
 
 iris$Sepal.Length[5]<-100 #list才需要兩個括號
 class(iris$Sepal.Length)
@@ -126,6 +128,9 @@ install.packages("data.table")
 islands #內建資料
 head(islands)
 names(islands)
+colnames(islands)
+rownames(islands)
+dimnames(islands)
 class(islands)
 n(islands)
 length(islands)
@@ -135,8 +140,7 @@ head(names(USArrests))
 dimnames(USArrests)
 length(USArrests)
 dim(USArrests)
-table(a)
-str(a)
+table(USArrests$Murder)
 str(USArrests)
 str(listSample)
 
@@ -241,5 +245,10 @@ for(i in 1:65){
   }
   print(i)
 }
+
+
+
+
+install.packages("tuneR")
 
 
